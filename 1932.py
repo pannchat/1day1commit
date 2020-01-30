@@ -1,6 +1,6 @@
 import sys
 t = int(sys.stdin.readline())
-n=[]+[list(map(int,sys.stdin.readline().split())) for _ in range(0,t)]
+n=[list(map(int,sys.stdin.readline().split())) for _ in range(0,t)]
 dp=[]
 for i in range(1,t):
     for j in range(len(n[i])):
