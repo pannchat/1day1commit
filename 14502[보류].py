@@ -8,12 +8,12 @@ map_list = []
 for i in range(0,m):
     map_list.append(list(map(int,sys.stdin.readline().split())))
 
-# 지도 출력
-for i in range(0,n):
-    for j in range(0,m):
-        print(map_list[i][j] ,end=' ')
-        if j == m-1 :
-            print("")
+# # 지도 출력
+# for i in range(0,n):
+#     for j in range(0,m):
+#         print(map_list[i][j] ,end=' ')
+#         if j == m-1 :
+#             print("")
 
 for i in range(0,n):
     for j in range(0,m):
