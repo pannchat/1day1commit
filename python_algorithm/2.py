@@ -1,7 +1,8 @@
-t = int(input())
-for i in range(t):
-    n,s,e,k = list(map(int,input().split()))
-    n_list = list(map(int,input().split()))
-    n_list = n_list[s-1:e]
-    n_list.sort()
-    print("#%d %d" %(i+1,n_list[k-1]))
+T = int(input())
+arr = []
+for i in range(T):
+    N,s,e,k = map(int,input().split())
+    arr = list(map(int,input().split()))
+    arr = arr[s-1:e]
+    arr.sort()
+    print(arr[k-1])
