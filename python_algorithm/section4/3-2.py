@@ -11,12 +11,13 @@ def Count(mid):
 
 n,m = map(int,input().split())
 arr = [i for i in range(1,n+1)]
+maxx = max(arr)
 l=1
 r=sum(arr)
 res=0
 while(l<=r):
     mid = (l+r)//2
-    if Count(mid) <= m:
+    if mid>maxx and Count(mid) <= m:
         res= mid
         r = mid - 1
     else:
