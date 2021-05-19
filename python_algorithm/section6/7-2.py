@@ -1,6 +1,8 @@
 import sys
 def DFS(L,sum):
     global res
+    if L > res:
+        return
     if sum > m:
         return
     if sum == m:
