@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
     n,m = map(int,input().split())
-    arr = [[0] * n for i in range(n)]
+    arr = [[0] * n for _ in range(n)]
 
     for _ in range(m):
         a,b,c = map(int,input().split())
