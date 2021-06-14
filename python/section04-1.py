@@ -27,3 +27,20 @@ print( i1 + i2 )
 print( big_int1 * big_int2)
 print( f1 + f2 )
 print(f2)
+
+
+a = 5
+b = 4.
+
+print(type(a), type(b))
+print(type(a+b))
+
+print(int(a+b))
+print(type(int(a+b)))
+
+print(int(b))
+print(float(a))
+print(complex(3))
+print(int(True))
+print(int(False))
+print(int('3'))
