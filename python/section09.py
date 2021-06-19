@@ -49,3 +49,9 @@ with open('./resource/text2.txt', 'w') as f:
 # writelines : 리스트 -> 파일로 저장
 with open('./resource/text3.txt', 'w') as f:
     list = ['kim\n', 'park\n', 'cho\n',]
+    f.writelines(list)
+
+
+with open('./resource/text4.txt', 'w') as f:
+    print('test contents1', file=f)
+    print('test contents1', file=f)
