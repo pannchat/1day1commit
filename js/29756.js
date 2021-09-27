@@ -4,6 +4,7 @@ function solution(numbers) {
     const arr = []
     let ans = numbers.map( num =>{
         let sum =0;
+        
         for(let i = 1; i*i<=num;i++){
             if(i*i == num){
                 sum+=i
@@ -12,7 +13,7 @@ function solution(numbers) {
             }
         
         }
-        
+
         return sum;
     })
     console.log(ans)

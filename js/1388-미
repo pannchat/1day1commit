@@ -1,0 +1,14 @@
+let fs = require('fs');
+let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+
+const dx = [0,1]
+const dy = [1,0]
+const [n,m] = input.shift().split(' ').map(e=>+e);
+console.log(n,m)
+const arr = [];
+for(let i=0; i<n; i++){
+    arr.push(input.shift().split(''))
+}
+const check = Array.from(Array(n), ()=>new Array(n).fill(false))
+let count = 0;
+const queue = [];
